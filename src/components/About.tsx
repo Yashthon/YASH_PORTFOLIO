@@ -10,22 +10,29 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate developer with 5+ years of experience creating digital solutions
+            Multidisciplinary IT professional with expertise in enterprise systems and business process integration
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer who loves creating beautiful, 
-              functional web applications. My journey in tech started with a curiosity 
-              about how things work, which led me to dive deep into both frontend 
-              and backend development.
+              I'm a passionate IT Software Engineer with proven success in building and scaling 
+              enterprise systems that bridge business goals with technical excellence. Currently at 
+              Cohesity, I drive end-to-end Lead to Cash (L2C) process integration, leveraging my 
+              expertise in Salesforce and Oracle-based business processes.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or enjoying a good cup of coffee 
-              while sketching out my next project idea.
+              My journey includes optimizing subscription billing and order management systems at 
+              Veritas, where I developed custom interface solutions and automated fulfillment 
+              workflows. I'm passionate about eliminating process failures through cross-functional 
+              collaboration and implementing advanced workflow automation solutions.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Beyond enterprise systems, I've contributed to AI research with a patent-pending 
+              YOLO-based object detection system for traffic control. When I'm not coding, you can 
+              find me exploring emerging technologies, contributing to open-source projects, or 
+              mentoring fellow developers in the tech community.
             </p>
           </div>
           
