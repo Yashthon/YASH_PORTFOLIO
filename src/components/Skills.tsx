@@ -6,37 +6,37 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "SQL", "HTML/CSS", "C/C++"],
+      skills: ["Python", "JavaScript", "TypeScript", "SQL", "HTML/CSS", "C/C++", "R"],
       color: "hero-gradient",
       icon: Code
     },
     {
       title: "Frameworks & Libraries",
-      skills: ["React.js", "Node.js", "Express.js", "Django", "Next.js", "Tailwind CSS"],
+      skills: ["React.js", "Node.js", "Express.js", "Django", "Next.js", "Tailwind CSS", "TensorFlow"],
       color: "accent-gradient",
       icon: Layers
     },
     {
-      title: "Databases",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Oracle", "Redis"],
+      title: "Databases & Analytics",
+      skills: ["MySQL", "Oracle", "SQL", "Tableau", "Data Analysis", "Data Visualization"],
       color: "subtle-gradient",
       icon: Database
     },
     {
-      title: "Cloud & DevOps",
-      skills: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Jenkins", "CI/CD"],
+      title: "Enterprise Systems",
+      skills: ["Salesforce", "SAP", "Process Automation", "Business Intelligence", "Oracle EBS"],
       color: "hero-gradient",
       icon: Cloud
     },
     {
-      title: "Tools & Technologies",
-      skills: ["Git", "JIRA", "Postman", "Figma", "Salesforce", "Microservices"],
+      title: "Development & Operations",
+      skills: ["Git", "Project Management", "Team Leadership", "Agile", "Strategic Planning", "Documentation"],
       color: "accent-gradient",
       icon: Settings
     },
     {
-      title: "Web Technologies",
-      skills: ["REST APIs", "GraphQL", "WebSockets", "OAuth", "JWT", "Webhooks"],
+      title: "Emerging Technologies",
+      skills: ["Machine Learning", "AI Strategy", "Blockchain", "NLP", "Digital Transformation", "Automation"],
       color: "subtle-gradient",
       icon: Globe
     }

@@ -88,7 +88,7 @@ export default function Hero() {
           
           <div className="flex gap-6 justify-center">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Yashthon" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-primary-glow transition-smooth hover-lift"
@@ -96,7 +96,7 @@ export default function Hero() {
               <Github size={28} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/yashprajapati99/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-primary-glow transition-smooth hover-lift"
@@ -104,7 +104,7 @@ export default function Hero() {
               <Linkedin size={28} />
             </a>
             <a 
-              href="mailto:yashprajapati@gmail.com"
+              href="mailto:yashhprajaapati@gmail.com"
               className="text-primary-foreground/60 hover:text-primary-glow transition-smooth hover-lift"
             >
               <Mail size={28} />
