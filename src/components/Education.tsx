@@ -6,25 +6,25 @@ export default function Education() {
   const education = [
     {
       degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, California, USA",
-      year: "2023 - 2024",
+      institution: "MIT World Peace University",
+      location: "Pune, IN-MH",
+      year: "2023",
       grade: "92.54%",
-      achievement: "Distinction",
+      achievement: "Best Outgoing Student",
       description: "Advanced computer science program focusing on artificial intelligence, machine learning, and distributed systems.",
       highlights: [
         "Specialized in Machine Learning and AI",
-        "Research in Distributed Computing",
-        "Teaching Assistant for undergraduate courses",
-        "Published research papers in top-tier conferences"
+        "Research in Object Detection and Traffic Control",
+        "Published multiple research papers",
+        "Presented at international conferences"
       ]
     },
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "MIT World Peace University",
-      location: "Pune, Maharashtra, India",
-      year: "2020 - 2023",
-      grade: "72.54%",
+      location: "Pune, IN-MH",
+      year: "2020",
+      grade: "72.48%",
       achievement: "Best Outgoing Student",
       description: "Comprehensive computer science program covering algorithms, data structures, software engineering, and modern web technologies.",
       highlights: [

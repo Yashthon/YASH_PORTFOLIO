@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Download, X, MapPin, Phone, Mail, Calendar, Award, GraduationCap, Building, Code, Languages } from "lucide-react";
+import { Download, X, MapPin, Phone, Mail, Calendar, Award, GraduationCap, Building, Code, Languages, BookOpen, FileText } from "lucide-react";
 
 interface CVPreviewProps {
   isOpen: boolean;
@@ -69,18 +69,18 @@ export default function CVPreview({ isOpen, onClose, onDownload }: CVPreviewProp
   const education = [
     {
       degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      year: "2024",
+      institution: "MIT World Peace University",
+      location: "Pune, IN-MH",
+      year: "2023",
       grade: "92.54%",
-      achievement: "Distinction"
+      achievement: "Best Outgoing Student"
     },
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "MIT World Peace University",
       location: "Pune, IN-MH", 
-      year: "2023",
-      grade: "74.48%",
+      year: "2020",
+      grade: "72.48%",
       achievement: "Best Outgoing Student"
     }
   ];
@@ -93,6 +93,29 @@ export default function CVPreview({ isOpen, onClose, onDownload }: CVPreviewProp
     "Data Science - Coursera (June 2022)",
     "Beginners to Advanced AI/SQL - Udemy (October 2021)"
   ];
+
+  const research = [
+    {
+      title: "An Analysis of Financial Fraud Detection Methods Using AI",
+      journal: "Vidhyayana Journal",
+      conference: "IAAR Conference",
+      date: "May 2023",
+      type: "Published Author"
+    },
+    {
+      title: "Sentiment Analysis of Emotion Detection Using NLP",
+      journal: "Springer's Algorithms for Intelligent Systems",
+      conference: "4th ICCCT Conference",
+      date: "October 2022",
+      type: "Springer Publication"
+    }
+  ];
+
+  const patent = {
+    title: "Method of Object Detection and Traffic Control Based on Artificial Intelligence",
+    applicationNo: "202221071202",
+    office: "Delhi, India"
+  };
 
   const languages = [
     { name: "English", level: "C2" },
@@ -222,6 +245,36 @@ export default function CVPreview({ isOpen, onClose, onDownload }: CVPreviewProp
                   {cert}
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Research & Publications */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold mb-3 border-b-2 border-gray-300 pb-1 flex items-center gap-2">
+              <BookOpen className="w-5 h-5" />
+              Research & Publications
+            </h2>
+            <div className="space-y-4">
+              {research.map((pub, index) => (
+                <div key={index} className="border-l-4 border-purple-500 pl-4">
+                  <h3 className="font-semibold text-base">{pub.title}</h3>
+                  <p className="text-sm text-gray-600">{pub.journal} • {pub.conference}</p>
+                  <p className="text-sm text-gray-600">{pub.date} • {pub.type}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Patent */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold mb-3 border-b-2 border-gray-300 pb-1 flex items-center gap-2">
+              <FileText className="w-5 h-5" />
+              Patent
+            </h2>
+            <div className="border-l-4 border-orange-500 pl-4">
+              <h3 className="font-semibold text-base">{patent.title}</h3>
+              <p className="text-sm text-gray-600">Application No: {patent.applicationNo}</p>
+              <p className="text-sm text-gray-600">Patent Office: {patent.office}</p>
             </div>
           </div>
 
