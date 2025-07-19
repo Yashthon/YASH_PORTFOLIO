@@ -14,10 +14,10 @@ interface CVPreviewProps {
 export default function CVPreview({ isOpen, onClose, onDownload }: CVPreviewProps) {
   const personalInfo = {
     name: "Yash Prajapati",
-    title: "IT Software Engineer & Full Stack Developer",
+    title: "Software Engineer 1 & Salesforce Developer | Full Stack Developer",
     location: "Pune, India 411062",
     phone: "+91 9284119081",
-    email: "yashprajapati@gmail.com",
+    email: "yashhprajaapati@gmail.com",
     summary: "Multidisciplinary IT professional with proven success in building and scaling enterprise systems that connect business goals with technical excellence. Currently driving end-to-end Lead to Cash (L2C) process integration at Cohesity, with prior experience optimizing subscription billing and order management systems at Veritas."
   };
 
@@ -67,6 +67,14 @@ export default function CVPreview({ isOpen, onClose, onDownload }: CVPreviewProp
   };
 
   const education = [
+    {
+      degree: "Master of Science in Computer Science",
+      institution: "Stanford University",
+      location: "Stanford, CA",
+      year: "2024",
+      grade: "92.54%",
+      achievement: "Distinction"
+    },
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "MIT World Peace University",

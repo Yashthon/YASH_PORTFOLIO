@@ -58,7 +58,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       category: "AI/ML Research",
-      patent: "Patent Pending - Delhi, India"
+      patent: "Patent Number: 202221071202"
     }
   ];
 
@@ -126,7 +126,7 @@ export default function Projects() {
                     disabled={project.demo === "#"}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    {project.demo === "#" ? "Enterprise Project" : "Live Demo"}
+                    Live Demo
                   </Button>
                   <Button 
                     size="sm" 
@@ -135,7 +135,7 @@ export default function Projects() {
                     disabled={project.github === "#"}
                   >
                     <Github className="w-4 h-4 mr-2" />
-                    {project.github === "#" ? "Private Repo" : "Code"}
+                    Code
                   </Button>
                 </div>
               </CardContent>
