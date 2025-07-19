@@ -5,6 +5,21 @@ import { GraduationCap, Award, Calendar, MapPin } from "lucide-react";
 export default function Education() {
   const education = [
     {
+      degree: "Master of Science in Computer Science",
+      institution: "Stanford University",
+      location: "Stanford, California, USA",
+      year: "2024",
+      grade: "3.8 GPA",
+      achievement: "Dean's List",
+      description: "Advanced computer science program with focus on artificial intelligence, machine learning, and distributed systems.",
+      highlights: [
+        "Specialized in AI/ML and Data Science",
+        "Research in Natural Language Processing",
+        "Teaching Assistant for Advanced Algorithms",
+        "Published research paper on neural network optimization"
+      ]
+    },
+    {
       degree: "Bachelor of Science in Computer Science",
       institution: "MIT World Peace University",
       location: "Pune, Maharashtra, India",
