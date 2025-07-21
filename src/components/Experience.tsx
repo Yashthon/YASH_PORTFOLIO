@@ -16,7 +16,8 @@ export default function Experience() {
         "Implementing advanced workflow automation solutions"
       ],
       technologies: ["Salesforce", "Oracle", "Process Integration", "Workflow Automation"],
-      type: "current"
+      type: "current",
+      logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHYLJLPUrNm3Q/company-logo_200_200/company-logo_200_200/0/1631354103610?e=1743897600&v=beta&t=ZkjWxcYr-V-TgKGnfWBIwRrLGhllBRXV-FMDSoAa2sA"
     },
     {
       title: "Business Process Integrator",
@@ -31,7 +32,8 @@ export default function Experience() {
         "Minimized data entry errors through automation"
       ],
       technologies: ["Oracle", "Salesforce", "System Integration", "Process Automation"],
-      type: "previous"
+      type: "previous",
+      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEJKutd7xOaDg/company-logo_200_200/company-logo_200_200/0/1630639436102/veritas_technologies_llc_logo?e=1743897600&v=beta&t=_v1eVGq6QwJGgSF1aMJWKkJKwCXCK8y_Qkw6QT8YNEM"
     },
     {
       title: "Associate IT Developer",
@@ -46,7 +48,8 @@ export default function Experience() {
         "Participated in sprint planning and backlog grooming using JIRA"
       ],
       technologies: ["Backend Development", "Automation", "JIRA", "Agile"],
-      type: "previous"
+      type: "previous",
+      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEJKutd7xOaDg/company-logo_200_200/company-logo_200_200/0/1630639436102/veritas_technologies_llc_logo?e=1743897600&v=beta&t=_v1eVGq6QwJGgSF1aMJWKkJKwCXCK8y_Qkw6QT8YNEM"
     }
   ];
 
@@ -85,12 +88,19 @@ export default function Experience() {
                     style={{ animationDelay: `${index * 0.2}s` }}
                   >
                     <CardContent className="p-6">
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
-                          <div className="flex items-center gap-2 text-muted-foreground mb-2">
-                            <Building className="w-4 h-4" />
-                            <span>{exp.company}</span>
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                        <div className="flex items-start gap-4">
+                          <img 
+                            src={exp.logo} 
+                            alt={`${exp.company} logo`}
+                            className="w-12 h-12 object-contain rounded-lg border border-border"
+                          />
+                          <div>
+                            <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
+                            <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                              <Building className="w-4 h-4" />
+                              <span>{exp.company}</span>
+                            </div>
                           </div>
                         </div>
                         <div className="flex flex-col sm:items-end gap-2">

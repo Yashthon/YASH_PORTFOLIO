@@ -23,14 +23,24 @@ export default function Hero() {
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
     >
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 hero-gradient opacity-90" />
+      {/* Blue gradient background with white animated polka dots */}
+      <div className="absolute inset-0 hero-gradient opacity-90">
+        <div className="absolute inset-0 opacity-30">
+          {Array.from({ length: 80 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-3 h-3 bg-white rounded-full animate-pulse"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 4}s`,
+                animationDuration: `${2 + Math.random() * 3}s`
+              }}
+            />
+          ))}
+        </div>
+      </div>
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">

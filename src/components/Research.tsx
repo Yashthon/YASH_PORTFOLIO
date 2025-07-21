@@ -27,6 +27,27 @@ export default function Research() {
     }
   ];
 
+  const books = [
+    {
+      title: "Broken Lines, Unbroken Spirits",
+      type: "Army Fiction Novel",
+      description: "A compelling military fiction novel exploring the resilience of soldiers and the bonds forged in the line of duty.",
+      platforms: ["Available in Print", "Digital Format"],
+      genre: "Military Fiction",
+      icon: "📖"
+    }
+  ];
+
+  const podcasts = [
+    {
+      title: "YP Podcast",
+      description: "Engaging discussions on technology, military history, and personal development.",
+      platforms: ["Apple Podcasts", "Spotify"],
+      type: "Technology & Military Podcast",
+      icon: "🎙️"
+    }
+  ];
+
   const patent = {
     title: "Method of Object Detection and Traffic Control Based on Artificial Intelligence",
     applicationNo: "202221071202",
@@ -52,10 +73,10 @@ export default function Research() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Research & Publications
+            Research, Publications & Creative Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            My contributions to scientific research and academic publications
+            My contributions to scientific research, academic publications, and creative endeavors
           </p>
         </div>
         
@@ -217,6 +238,109 @@ export default function Research() {
                         <p className="text-muted-foreground leading-relaxed">
                           {conf.description}
                         </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Books & Publications */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+              <BookOpen className="w-6 h-6 text-primary" />
+              Books & Creative Works
+            </h3>
+            
+            <div className="grid gap-6">
+              {books.map((book, index) => (
+                <Card 
+                  key={index} 
+                  className="glass-effect hover-lift animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="text-2xl">{book.icon}</div>
+                      <div className="flex-1">
+                        <div className="flex items-start justify-between mb-3">
+                          <div className="flex-1">
+                            <h4 className="text-lg font-semibold mb-2">{book.title}</h4>
+                            <div className="text-sm text-muted-foreground mb-2">
+                              <span className="font-medium">{book.genre}</span>
+                            </div>
+                          </div>
+                          <Badge variant="secondary">
+                            {book.type}
+                          </Badge>
+                        </div>
+                        
+                        <p className="text-muted-foreground mb-4 leading-relaxed">
+                          {book.description}
+                        </p>
+                        
+                        <div className="flex flex-wrap gap-2">
+                          {book.platforms.map((platform) => (
+                            <Badge 
+                              key={platform} 
+                              variant="outline" 
+                              className="text-xs hover-lift transition-smooth"
+                            >
+                              {platform}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Podcasts */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+              <Award className="w-6 h-6 text-primary" />
+              Podcasts & Media
+            </h3>
+            
+            <div className="grid gap-6">
+              {podcasts.map((podcast, index) => (
+                <Card 
+                  key={index} 
+                  className="glass-effect hover-lift animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="text-2xl">{podcast.icon}</div>
+                      <div className="flex-1">
+                        <div className="flex items-start justify-between mb-3">
+                          <div className="flex-1">
+                            <h4 className="text-lg font-semibold mb-2">{podcast.title}</h4>
+                          </div>
+                          <Badge variant="secondary">
+                            {podcast.type}
+                          </Badge>
+                        </div>
+                        
+                        <p className="text-muted-foreground mb-4 leading-relaxed">
+                          {podcast.description}
+                        </p>
+                        
+                        <div className="flex flex-wrap gap-2">
+                          {podcast.platforms.map((platform) => (
+                            <Badge 
+                              key={platform} 
+                              variant="outline" 
+                              className="text-xs hover-lift transition-smooth"
+                            >
+                              Available on {platform}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </CardContent>
