@@ -119,25 +119,6 @@ export default function Projects() {
                   ))}
                 </div>
                 
-                <div className="flex gap-4">
-                  <Button 
-                    size="sm" 
-                    className="flex-1 hover-glow transition-bounce"
-                    disabled={project.demo === "#"}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1 hover-lift"
-                    disabled={project.github === "#"}
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                </div>
               </CardContent>
             </Card>
           ))}

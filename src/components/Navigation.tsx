@@ -40,7 +40,7 @@ export default function Navigation() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-2xl font-bold accent-gradient bg-clip-text text-transparent hover-lift transition-smooth"
           >
-            Portfolio
+            YP
           </button>
           
           {/* Desktop Navigation */}
