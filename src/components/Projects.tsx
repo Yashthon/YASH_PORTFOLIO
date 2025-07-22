@@ -89,7 +89,7 @@ export default function Projects() {
                 />
                 <div className="absolute inset-0 hero-gradient opacity-20" />
                 <div className="absolute top-4 right-4">
-                  <Badge className="bg-primary/20 text-primary">
+                  <Badge className="bg-primary text-primary-foreground shadow-md border-0">
                     {project.category}
                   </Badge>
                 </div>
