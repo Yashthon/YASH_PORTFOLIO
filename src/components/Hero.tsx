@@ -49,7 +49,7 @@ export default function Hero() {
             Hi, I'm <span className="accent-gradient bg-clip-text text-transparent">Yash</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/80 max-w-2xl mx-auto">
-            Software Engineer 1 & Salesforce Developer | Full Stack Developer
+            IT Software Engineer 1 & Salesforce Developer | Full Stack Developer
           </p>
           <p className="text-lg mb-12 text-primary-foreground/70 max-w-xl mx-auto">
             Multidisciplinary IT professional with expertise in building scalable enterprise systems 
