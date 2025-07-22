@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -38,11 +38,8 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-muted-foreground flex items-center justify-center gap-2">
-            Made with <Heart className="w-4 h-4 text-red-500" /> by Yash Prajapati
-          </p>
-          <p className="text-sm text-muted-foreground mt-2">
-            © {new Date().getFullYear()} All rights reserved.
+          <p className="text-muted-foreground">
+            Yash Prajapati © {new Date().getFullYear()} All rights reserved
           </p>
         </div>
       </div>
