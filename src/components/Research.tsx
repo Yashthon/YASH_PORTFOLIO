@@ -42,7 +42,10 @@ export default function Research() {
     {
       title: "Broken Lines, Unbroken Spirits",
       description: "Engaging discussions on technology, military history, and personal development.",
-      platforms: ["Apple Podcasts", "Spotify"],
+      platforms: [
+        { name: "Apple Podcasts", url: "https://podcasts.apple.com/us/podcast/broken-lines-unbroken-spirits-in-%E0%A4%B9-%E0%A4%A8-%E0%A4%A6/id1823431566" },
+        { name: "Spotify", url: "https://open.spotify.com/show/5XCXqiQSqw1o9cI2ew4KCz?si=4eefc4d31af64d2b" }
+      ],
       type: "Technology & Military Podcast",
       icon: "🎙️"
     }
@@ -332,13 +335,20 @@ export default function Research() {
                         
                         <div className="flex flex-wrap gap-2">
                           {podcast.platforms.map((platform) => (
-                            <Badge 
-                              key={platform} 
-                              variant="outline" 
-                              className="text-xs hover-lift transition-smooth"
+                            <a 
+                              key={platform.name}
+                              href={platform.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block"
                             >
-                              Available on {platform}
-                            </Badge>
+                              <Badge 
+                                variant="outline" 
+                                className="text-xs hover-lift transition-smooth cursor-pointer hover:bg-primary hover:text-primary-foreground"
+                              >
+                                Available on {platform.name}
+                              </Badge>
+                            </a>
                           ))}
                         </div>
                       </div>
