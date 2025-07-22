@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Building, Calendar, MapPin } from "lucide-react";
+import cohesityLogo from "@/assets/cohesity-logo.png";
+import veritasLogo from "@/assets/veritas-logo.png";
 
 export default function Experience() {
   const experiences = [
@@ -17,7 +19,7 @@ export default function Experience() {
       ],
       technologies: ["Salesforce", "Oracle", "Process Integration", "Workflow Automation"],
       type: "current",
-      logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHYLJLPUrNm3Q/company-logo_200_200/company-logo_200_200/0/1631354103610?e=1743897600&v=beta&t=ZkjWxcYr-V-TgKGnfWBIwRrLGhllBRXV-FMDSoAa2sA"
+      logo: cohesityLogo
     },
     {
       title: "Business Process Integrator",
@@ -33,7 +35,7 @@ export default function Experience() {
       ],
       technologies: ["Oracle", "Salesforce", "System Integration", "Process Automation"],
       type: "previous",
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEJKutd7xOaDg/company-logo_200_200/company-logo_200_200/0/1630639436102/veritas_technologies_llc_logo?e=1743897600&v=beta&t=_v1eVGq6QwJGgSF1aMJWKkJKwCXCK8y_Qkw6QT8YNEM"
+      logo: veritasLogo
     },
     {
       title: "Associate IT Developer",
@@ -49,7 +51,7 @@ export default function Experience() {
       ],
       technologies: ["Backend Development", "Automation", "JIRA", "Agile"],
       type: "previous",
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEJKutd7xOaDg/company-logo_200_200/company-logo_200_200/0/1630639436102/veritas_technologies_llc_logo?e=1743897600&v=beta&t=_v1eVGq6QwJGgSF1aMJWKkJKwCXCK8y_Qkw6QT8YNEM"
+      logo: veritasLogo
     }
   ];
 
