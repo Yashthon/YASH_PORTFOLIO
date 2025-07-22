@@ -40,7 +40,7 @@ export default function Research() {
 
   const podcasts = [
     {
-      title: "YP Podcast",
+      title: "Broken Lines, Unbroken Spirits",
       description: "Engaging discussions on technology, military history, and personal development.",
       platforms: ["Apple Podcasts", "Spotify"],
       type: "Technology & Military Podcast",
