@@ -1,5 +1,5 @@
 export function downloadCV() {
-    const docId = import.meta.env.VITE_GOOGLE_DOC_ID;
+    const docId = '1pub0f8Quntb2KP_oh9UQRYRE2ivn1ARDVd33c4OUW8s';//import.meta.env.VITE_GOOGLE_DOC_ID;
   
     if (!docId) {
       console.error("VITE_GOOGLE_DOC_ID is missing");
