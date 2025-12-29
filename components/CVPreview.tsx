@@ -1,47 +1,38 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Download, X } from "lucide-react";
+import { X } from "lucide-react";
 
 interface CVPreviewProps {
   isOpen: boolean;
   onClose: () => void;
-  onDownload: () => void;
+  onDownload?: () => void;
 }
 
-export default function CVPreview({
-  isOpen,
-  onClose,
-  onDownload
-}: CVPreviewProps) {
+export default function CVPreview({ isOpen, onClose }: CVPreviewProps) {
   const docId = import.meta.env.VITE_GOOGLE_DOC_ID;
 
-  if (!docId) {
-    console.error("VITE_GOOGLE_DOC_ID is missing");
-    return null;
-  }
+  if (!docId) return null;
 
-  const previewUrl = `https://docs.google.com/document/d/${docId}/preview`;
+  const previewUrl = `https://docs.google.com/document/d/${docId}/preview?rm=minimal`;
 
   return (
-    <Dialog
-      open={isOpen}
-      onOpenChange={(open) => {
-        if (!open) onClose();
-      }}
-    >
-      <DialogContent className="bg-transparent border-b">
-          <div className="flex">
-            <Button onClick={onClose} variant="ghost" size="sm">
-              <X className="w-4 h-4" />
-            </Button>
-          </div>
-          
-        {/* Google Docs Preview */}
-        <iframe
-          src={previewUrl}
-          title="Resume Preview"
-          className="w-full h-full border-none"
-        />
+    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+      <DialogContent className="max-w-6xl h-[90vh] p-0 overflow-hidden bg-black/90">
+
+        {/* Preview Container */}
+        <div className="flex justify-center items-start h-full overflow-auto bg-neutral-800">
+          <iframe
+            src={previewUrl}
+            title="Resume Preview"
+            className="border-none"
+            style={{
+              width: "820px",            // A4 width
+              height: "100%",
+              transform: "scale(1.25)",  // 🔑 this makes it readable
+              transformOrigin: "top center"
+            }}
+          />
+        </div>
       </DialogContent>
     </Dialog>
   );
