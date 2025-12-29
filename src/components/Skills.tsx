@@ -6,7 +6,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "SQL", "HTML/CSS", "C/C++", "R"],
+      skills: ["Apex","Python", "JavaScript", "TypeScript", "SQL", "HTML/CSS", "C/C++", "R"],
       color: "hero-gradient",
       icon: Code
     },
@@ -30,7 +30,7 @@ export default function Skills() {
     },
     {
       title: "Development & Operations",
-      skills: ["Git", "Project Management", "Team Leadership", "Agile", "Strategic Planning", "Documentation"],
+      skills: ["Git", "Opsera", "Project Management", "Team Leadership", "Agile", "Strategic Planning", "Documentation"],
       color: "accent-gradient",
       icon: Settings
     },

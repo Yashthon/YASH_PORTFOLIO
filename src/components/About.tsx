@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Palette, Zap } from "lucide-react";
+import { ShieldCheck, Code2, Zap } from "lucide-react";
 
 export default function About() {
   return (
@@ -17,7 +17,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate IT Software Engineer with proven success in building and scaling 
+              I'm a passionate Software Engineer with proven success in building and scaling 
               enterprise systems that bridge business goals with technical excellence. Currently at 
               Cohesity, I drive end-to-end Lead to Cash (L2C) process integration, leveraging my 
               expertise in Salesforce and Oracle-based business processes.
@@ -41,12 +41,13 @@ export default function About() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-lg hero-gradient flex items-center justify-center">
-                    <Code className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Full Stack Development</h3>
+                    <ShieldCheck className="w-6 h-6 text-primary-foreground" />
+                  </div>  
+                  <h3 className="text-xl font-semibold">Salesforce Platform Administrator</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  React, Node.js, TypeScript, and modern web technologies
+                Declarative automation (Flows, Approval Processes), user & security management,
+                object modeling, validation rules, reports & dashboards, and org configuration.
                 </p>
               </CardContent>
             </Card>
@@ -55,12 +56,14 @@ export default function About() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-lg accent-gradient flex items-center justify-center">
-                    <Palette className="w-6 h-6 text-accent-foreground" />
+                    <Code2 className="w-6 h-6 text-accent-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold">UI/UX Design</h3>
+                  <h3 className="text-xl font-semibold">Salesforce Platform Developer</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Creating intuitive and beautiful user experiences
+                Apex development including triggers, classes, and test coverage, 
+                Lightning Web Components (LWC), SOQL/SOSL, integrations using REST APIs,
+                asynchronous processing, and Salesforce security best practices.
                 </p>
               </CardContent>
             </Card>

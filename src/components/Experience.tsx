@@ -7,7 +7,7 @@ import veritasLogo from "@/assets/veritas-logo.png";
 export default function Experience() {
   const experiences = [
     {
-      title: "IT Software Engineer 1",
+      title: "Software Engineer 1",
       company: "Cohesity",
       location: "Pune, India",
       period: "12/2024 - Current",
@@ -22,7 +22,7 @@ export default function Experience() {
       logo: cohesityLogo
     },
     {
-      title: "Business Process Integrator",
+      title: "Business System Analyst",
       company: "Veritas",
       location: "Pune, India",
       period: "07/2023 - 12/2024",

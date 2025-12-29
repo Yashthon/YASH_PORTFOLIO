@@ -38,6 +38,13 @@ export default function Education() {
 
   const certifications = [
     {
+      name: "Salesforce Platform Administrator",
+      issuer: "Salesforce.com",
+      date: "December 2025",
+      description: "Proficient in Salesforce administration including user management, security, automation, and reporting",
+      skills: ["Salesforce", "User Management", "Automation", "Reports & Dashboards"]
+    },
+    {
       name: "Google Data Analytics",
       issuer: "Coursera",
       date: "March 2024",

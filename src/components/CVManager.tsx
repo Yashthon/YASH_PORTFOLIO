@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CVPreview from './CVPreview';
 import { useToast } from '@/hooks/use-toast';
+import { downloadCV } from '@/utils/downloadCV'; // ✅ ADD THIS
 
 export default function CVManager() {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
@@ -12,8 +13,6 @@ export default function CVManager() {
     };
 
     const handleCVDownload = () => {
-      // In a real implementation, this would generate and download a PDF
-      // For now, we'll show a toast notification
       toast({
         title: "CV Download",
         description: "CV download functionality would be implemented here with PDF generation library like jsPDF or Puppeteer.",
@@ -21,7 +20,8 @@ export default function CVManager() {
     };
 
     window.addEventListener('openCVPreview', handleCVPreview);
-    window.addEventListener('downloadCV', handleCVDownload);
+    //window.addEventListener('downloadCV', handleCVDownload);
+    window.removeEventListener('downloadCV', handleCVDownload);
 
     return () => {
       window.removeEventListener('openCVPreview', handleCVPreview);
@@ -29,17 +29,9 @@ export default function CVManager() {
     };
   }, [toast]);
 
+  // ✅ FIXED: now actually downloads PDF
   const handleDownload = () => {
-    // Simulate PDF generation and download
-    const element = document.querySelector('.cv-content');
-    if (element) {
-      // In a real implementation, you would use a library like html2pdf.js or jsPDF
-      // For demonstration, we'll show a toast
-      toast({
-        title: "Downloading CV",
-        description: "Your CV is being prepared for download. In a real implementation, this would generate a PDF file.",
-      });
-    }
+    downloadCV();
   };
 
   return (
