@@ -38,6 +38,13 @@ export default function Education() {
 
   const certifications = [
     {
+      name: "Salesforce Platform Developer",
+      issuer: "Salesforce.com",
+      date: "January 2026",
+      description: "Apex development including triggers, classes, and test coverage, Lightning Web Components (LWC), SOQL/SOSL, integrations using REST APIs, asynchronous processing, and Salesforce security best practices.",
+      skills: ["Apex", "Lightning Web Components", "SOQL/SOSL", "REST APIs", "Async Processing", "Salesforce Security"]
+    },
+    {
       name: "Salesforce Platform Administrator",
       issuer: "Salesforce.com",
       date: "December 2025",
